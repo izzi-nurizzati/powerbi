@@ -7,9 +7,7 @@ Project Description
 This project analyzes employee engagement survey 2023 results - a single-year analysis that focus on detailed insights, patterns & key drivers
 
 Tools used
-1.	Excel (data transformation & data manipulation)
-2.	SQL (SQL Server in SSMS)
-3.	Power BI (data modeling, DAX, visualization)
+Power BI (data modeling, DAX, visualization)
 
 Dataset
 1.	EmployeeData_2023 (DataYear, EmployeeID, DivisionName, DepartmentName, Gender, Year, Month)
