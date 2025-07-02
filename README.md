@@ -1,34 +1,17 @@
 # powerbi
 
-Project Title
-Employee Engagement Survey 2023
-
-Project Description
-This project analyzes employee engagement survey 2023 results - a single-year analysis that focus on detailed insights, patterns & key drivers
+Title
+Easy Analytics Corporation - Employee Engagement Dashboard 2023
 
 Tools used
+Excel (data transformation & data manipulation)
 Power BI (data modeling, DAX, visualization)
 
-Dataset
-1.	EmployeeData_2023 (DataYear, EmployeeID, DivisionName, DepartmentName, Gender, Year, Month)
-2.	SurveyResponse_2023 (DataYear, EmployeeID, QuestionID, LikertScore, AverageScore)
-3.	SurveyQuestion_MarketScore_2023 (DataYear, QuestionID, Metric, Category, QuestionText, Theme, MarketScore)
-4.	MetricMapping (Metric, MetricOrder)
-5.	CategoryMapping (Metric, Category, CategoryOrder)
-6.	QuestionMapping (QuestionID, QuestionText, QuestionOrder)
+Purpose
+Designed to analyze the Employee Engagement Survey results Year 2023
+Identify strengths, areas for improvement & patterns across different divisions & departments
+Turn employee feedback into actionable insights to drive engagement & organizational growth
 
-Database design
-Star Schema, 1 Fact Table (SurveyResponse_2023) with 2 Dimension Tables (EmployeeData_2023, SurveyQuestion_MarketScore_2023)
+HR & leadership team want to identify what’s driving engagement & take action to improve retention, morale & performance (employee engagement is a measure of how emotionally committed employees are to their work and the company)
 
-Data model
-From Dimension Table @ Lookup Table to Fact Table, using Collie Layout
-
-One-to-many relationship (1:*)
-1.	EmployeeData_2023[EmployeeID] → SurveyResponse[EmployeeID]
-2.	SurveyQuestion_MarketScore[QuestionID] → SurveyResponse[QuestionID]
-3.	MetricMapping[Metric] → SurveyQuestion_MarketScore[Metric]
-4.	CategoryMapping[Category] → SurveyQuestion_MarketScore[Category]
-
-One-to-one relationship (1:1)
-1.	QuestionMapping[QuestionID] → SurveyQuestion_MarketScore[QuestionID]
 
